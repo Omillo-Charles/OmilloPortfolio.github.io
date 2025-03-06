@@ -8,4 +8,87 @@ body{
     margin: 0;
     font-family:  "PT Sans Narrow", sans-serif;
     font-size: 1.2rem;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+:root{
+    --color: #ff00ff;
+    --link_pading: 0.4rem 0.8rem;
+    --link_radius: 16px;
+    --transition:0.4s ease;
+    --border_black:2px solid black;
+    --border_white:2px solid white;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 16px var(--color);
+
+    @media screen and (max-width:768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+div.header_div{
+    margin-left: 1.6rem;
+    text-align: center;
+    text-shadow: 0 0 1.02px var(--color);
+
+    @media screen and (max-width:768px){
+        margin-left: 0.8rem;
+    }
+}
+
+div.header_div span{
+    color: var(--color);
+}
+
+nav.header_nav{
+    margin-right: 1.6rem;
+}
+
+nav.header_nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+
+    @media screen and (max-width:768px){
+        flex-wrap: wrap;
+    }
+}
+
+nav.header_nav ul li{
+    margin: 0.8rem;
+
+    @media screen and (max-width:768px){
+        margin: 0.4rem;
+    }
+}
+
+nav.header_nav ul li a{
+    color: var(--color);
+    text-decoration: none;
+    box-shadow: inset 0 0 4px var(--color);
+    padding: var(--link_pading);
+    border-radius: var(--link_radius);
+    transition: var(--transition);
+}
+
+nav.header_nav ul li a:hover{
+    background-color: var(--color);
+    color: black;
+}
+
+nav.header_nav ul li a:active{
+    background-color: var(--color);
+    color: black;
 }
