@@ -19,6 +19,7 @@ body{
     --transition:0.4s ease;
     --border_black:2px solid black;
     --border_white:2px solid white;
+    --font_family:  "PT Sans Narrow", sans-serif;
 }
 
 header{
@@ -91,4 +92,132 @@ nav.header_nav ul li a:hover{
 nav.header_nav ul li a:active{
     background-color: var(--color);
     color: black;
+}
+
+section.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 3.2rem;
+
+    @media  screen and (max-width:768px) {
+        flex-direction: column;
+        margin-top: 1.6rem;
+    }
+}
+
+div.hero_image{
+    margin: 0.8rem;
+}
+
+div.hero_image img{
+    border-radius: 50%;
+    box-shadow: 0 0 32px var(--color);
+    border: var(--border_white);
+}
+
+div.text{
+    text-align: center;
+    margin: 0.8rem;
+}
+
+div.text span{
+    color: var(--color);
+}
+
+div.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.8rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.buttons button{
+    margin: 0.4rem;
+    padding: var(--link_pading);
+    font-family: var(--font_family);
+    font-size: 1.2rem;
+    border: var(--border_white);
+    border-radius: 16px;
+    box-shadow: inset 0 0 16px var(--color);
+}
+
+section.about_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1.6rem;
+
+    @media screen and (max-width:768px){
+        flex-direction: column;
+    }
+}
+
+div.about{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0.8rem;
+    border: var(--border_white);
+    margin: 2.4rem 1.6rem;
+    box-shadow: inset 0 0 16px var(--color);
+    border-radius: 32px;
+    width: 40%;
+
+    @media screen and (max-width:768px){
+        margin: 0.8rem 1.6rem;
+        width: 96%;
+    }  
+}
+
+div.about h3{
+    color: var(--color);
+    position: absolute;
+    top: -2.56rem;
+    left: 32px;
+    background-color: whitesmoke;
+    padding: var(--link_pading);
+    border: var(--border_white);
+    border-radius: 16px;
+    font-size: 16px;
+    box-shadow:inset 0 0 8px var(--color);
+}
+
+div.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.head{
+    color: var(--color);
+}
+
+div.main_skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+div.main_skills figure{
+    background-color: white;
+    border: 2px solid var(--color);
+    border-radius: 16px;
+    color: black;
+    text-align: center;
+}
+
+div.main_skills figure img{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+div.main_skills figure figcaption span{
+    color: var(--color);
 }
