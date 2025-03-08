@@ -8,3 +8,5 @@ A web developer and a graphic designer.
 ![About-Skills Section](https://github.com/Omillo-Charles/OmilloPortfolio.github.io/blob/b9c6e2b22b6a946eeb9851f80f9ed8be63ed6b91/Screenshot%202025-03-08%20115351.png)
 
 ![Services Section](https://github.com/Omillo-Charles/OmilloPortfolio.github.io/blob/0fff108de6563ccf25dffaf0d5b85c2bb826fba4/Screenshot%202025-03-08%20115404.png)
+
+![Contact Section](https://github.com/Omillo-Charles/OmilloPortfolio.github.io/blob/fbd14d6ba7d2c8711397da90c39f2d9a6413097a/Screenshot%202025-03-08%20115413.png)
